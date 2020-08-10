@@ -1,0 +1,25 @@
+body > * {
+    border: 1px dotted greenyellow;
+}
+
+* {
+    background-size: cover;
+}
+
+.img {
+    background-size: contain;
+    width: 100%;
+    height: 0;
+    padding-top: calc(364 / 591 * 100%);
+    background-repeat: no-repeat;
+}
+
+.img.med {
+    height: 95px;
+    width: 95px;
+}
+
+.img.small {
+    height: 63px;
+    width: 63px;
+}
