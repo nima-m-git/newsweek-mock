@@ -12,14 +12,16 @@
         </head>
     <body>
         <header>
-            <div class="main-header hor">
+            <div class="main-header navbar">
                 <div class="weather-widget"></div>
                 <div class='logo'>Newsweek</div>
-                <div class='login'></div>
-                <div class='subscribe'>Subscribe</div>
-                <div class='hamburger'></div>
+                <div class="right">
+                    <div class='login'></div>
+                    <div class='subscribe'>Subscribe</div>
+                    <div class='hamburger'></div>
+                </div>
             </div>
-            <nav class="d-none d-lg-flex">
+            <nav class="d-none d-lg-flex navbar">
                 <ul class="hor">
                     <li>U.S</li>
                     <li>World</li>
@@ -35,7 +37,7 @@
                     <li id='search-btn'>Search</li>
                 </ul>
             </nav>
-            <nav class="d-none d-lg-flex">
+            <nav class="d-none d-lg-flex navbar">
                 <ul class="hor">
                     <li>Trending</li>
                     <li>Donald Trump</li>
@@ -47,36 +49,36 @@
             </nav>
         </header>
         <div class="main container-fluid">
-            <div class="row top-article">
-                <section class='featured-stories col-md-5 col-lg-4'>
+            <div class="row top-article d-flex">
+                <section class='featured-stories col-md-5 col-lg-4 order-2'>
                     <h2>Featured Stories</h2>
                     <article>
                         <div class='img' style='background-image: url("https://d.newsweek.com/en/full/1619674/kanye-west-innovator-awards.webp?w=466&h=311&q=90&f=3701deea7eddd1f9aa9e241d91cad296");'></div>
                         <h3>Kanye West is 'Most Compelling' Voice Against Abortion Says Tucker Carlson</h3>
-                        <p>The rapper's campaign repeatedly emphasized faith in a list of 10 policy proposals published on the Kanye 2020 website alongside Bible passages.</p>
+                        <p class='summary'>The rapper's campaign repeatedly emphasized faith in a list of 10 policy proposals published on the Kanye 2020 website alongside Bible passages.</p>
                     </article>
                     <article>
                         <div class='img' style="background-image: url(https://d.newsweek.com/en/full/1619531/julian-castro.webp?w=466&h=311&q=90&f=e185c46ebf091c12df0022b99c76dcc4);"></div>
                         <h3>Why High-Profile Latino Democrats Won't Speak at Biden Virtual Convention </h3>
-                        <p>The choices for who gets speaking slots during the convention's drastically shorter broadcast are under scrutiny.</p>
+                        <p class='summary'>The choices for who gets speaking slots during the convention's drastically shorter broadcast are under scrutiny.</p>
                     </article>
                     <article>
                         <div class='img' style="background-image: url(https://d.newsweek.com/en/full/1613965/love-asylum-seekers-political-asylum-seekers.webp?w=466&h=311&q=90&f=6147c5aff1651c9fbec0ce8d5046e19b);"></div>
                         <h3>'My Husband And I Have Nowhere in the World We Can Safely Live Together'</h3>
-                        <p>I am an Israeli woman married to an Iranian man, and together we can not settle down in either of our countries, or even enter them.</p>
+                        <p class='summary'>I am an Israeli woman married to an Iranian man, and together we can not settle down in either of our countries, or even enter them.</p>
                     </article>
                     <article>
                         <div class="img" style="background-image: url(https://d.newsweek.com/en/full/1619639/man-handcuffs.webp?w=466&h=311&q=90&f=ded3c39008c78e663be04f951452bd2f);"></div>
                         <h3>156 Arrested in Controversial Operation LeGend, Which Brings Feds to States</h3>
-                        <p>U.S. Attorneys announced Friday that 156 people had been arrested in Kansas City, Missouri under Operation LeGend, President Donald Trump's controversial federal crime-fighting initiative.</p>
+                        <p class='summary'>U.S. Attorneys announced Friday that 156 people had been arrested in Kansas City, Missouri under Operation LeGend, President Donald Trump's controversial federal crime-fighting initiative.</p>
                     </article>
                     <article>
                         <div class="img" style="background-image: url(https://d.newsweek.com/en/full/1619730/beirut-protest.webp?w=466&h=311&q=90&f=93290c50864030dc5361323ee028169c);"></div>
                         <h3>Lebanese Protesters Hang Effigies of Political Leaders Following Port Blast</h3>
-                        <p>"Hang the nooses," angry Lebanese wrote on social media and protest signs.</p>
+                        <p class='summary'>"Hang the nooses," angry Lebanese wrote on social media and protest signs.</p>
                     </article>
                 </section>
-                <div class="col-md-7 col-lg-5">
+                <div class="col-md-7 col-lg-5 order-1">
                     <section class='top-story'>
                         <h2>Top Story</h2>
                         <article>
@@ -92,15 +94,15 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="img" style="background-image: url(https://d.newsweek.com/en/full/1618006/hiroshima-atomic-bomb-hospital.webp?w=397&h=397&f=58dcb31c76a5ea062e2594644901f879);"></div>
-                                    <h3>'I'm Surviving My Teen Years of Anxiety and Depression. Don't Give Up'</h3>
+                                    <h3 class='title'>'I'm Surviving My Teen Years of Anxiety and Depression. Don't Give Up'</h3>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="img" style="background-image: url(https://d.newsweek.com/en/full/1619243/mental-health-teenagers-creativity.webp?w=397&h=397&f=7f35fd4d4da54ecd64294f08b4349766);"></div>
-                                    <h3>'My Grandfather and Mother Survived The Hiroshima Atomic Bomb'</h3>
+                                    <h3 class='title'>'My Grandfather and Mother Survived The Hiroshima Atomic Bomb'</h3>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="img" style="background-image: url(https://d.newsweek.com/en/full/1617515/dogs-celebrities-dog-trainer.webp?w=397&h=397&f=f441b7dcdf76d3bf22c39967a6e27ed0);"></div>
-                                    <h3>'I'm a Celebrity Dog Trainer in Hollywood'</h3>
+                                    <h3 class='title'>'I'm a Celebrity Dog Trainer in Hollywood'</h3>
                                 </div>
                             </div>
                         </section>
@@ -109,134 +111,148 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="img" style="background-image: url(https://d.newsweek.com/en/full/1618281/melting-ice.webp?w=397&h=397&f=b9f4b71257d448e7debb4f705046593d);"></div>
-                                    <h3>Nat Geo's 'The Last Ice' Doc: What's Really at Stake With Global Warming</h3>
+                                    <h3 class="title">Nat Geo's 'The Last Ice' Doc: What's Really at Stake With Global Warming</h3>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="img" style="background-image: url(https://d.newsweek.com/en/full/1614765/amtrak.webp?w=397&h=397&f=697f2039b2c70da84042cf088611de71);"></div>
-                                    <h3>What It's Like to Travel Across the Country by Amtrak Right Now</h3>
+                                    <h3 class="title">What It's Like to Travel Across the Country by Amtrak Right Now</h3>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="img" style="background-image: url(https://d.newsweek.com/en/full/1613678/hazmat-suit-london-airport.webp?w=397&h=397&f=213d9394caaf335f5ea569b9fa9784bb);"></div>
-                                    <h3>How Safe is it to Fly? 67 Percent of Americans Are Uncomfortable Flying</h3>
+                                    <h3 class="title">How Safe is it to Fly? 67 Percent of Americans Are Uncomfortable Flying</h3>
                                 </div>
                             </div>
                         </section>
                         <section class='more-stories'>
-                            <h2>More Stories</h2>
-                            <ul>
-                                <li>
-                                    <div class='img med' style="background-image: url(https://d.newsweek.com/en/full/1619684/baby-formula-bottle.webp?w=95&h=95&f=ae083f676ebdbcb1f099f679d7ee3d56);"></div>
-                                    <h3>Suspects Charged for Stealing $11,000 in Baby Formula and Red Bull</h3>
-                                    <p>Suspects allegedly stole items including dog food, soda, and Red Bull to conceal the formula.</p>
-                                </li>
-                                <li>
-                                    <div class='img med' style="background-image: url(https://d.newsweek.com/en/full/1619692/us-capitol-building.webp?w=95&h=95&f=c6e978d57871aa524d9043d6b22a87b9);"></div>
-                                    <h3>Georgia Democrat Faces Calls to Drop Out of Senate Race Over 'Racist' Novel</h3>
-                                    <p>Matt Lieberman, the son of the former vice presidential nominee, self-published a book containing uses of the N-word and the main character being positive toward members of the KKK.</p>
-                                </li>
-                                <li>
-                                    <div class='img med' style="background-image: url(https://d.newsweek.com/en/full/1619681/prisoners-chains.webp?w=95&h=95&f=ded575e881c081fd5cd3de830fcf7cbd);"></div>
-                                    <h3>196 Fugitives Walked Out of a Halfway House in Texas</h3>
-                                    <p>Dozens of violent criminals and sexual predators are now fugitives after skipping parole in Houston.</p>
-                                </li>
-                                <li>
-                                    <div class='img med' style="background-image: url(https://d.newsweek.com/en/full/1619678/donald-trump-bedminster-new-jersey.webp?w=95&h=95&f=d7c1c31f60e4c16b563c25592c452271);"></div>
-                                    <h3>Trump Says China Would 'Love' It if He Loses to Joe Biden in November</h3>
-                                    <p>The president also said that China would "own" the U.S. if he were to lose against Biden in the coming election.</p>
-                                </li>
-                                <li>
-                                    <div class='img med' style="background-image: url(https://d.newsweek.com/en/full/1619676/wedding-during-coronavirus-pandemic.webp?w=95&h=95&f=080ca9583464f03805ff359124cd9b89);"></div>
-                                    <h3>Brides Angry at Mass. Gov. Baker for Slashing Guest List During COVID-19</h3>
-                                    <p>The number of outside guests allowed at events will be cut by 50 percent on Tuesday in the state of Massachusetts, with possible fines for those who disobey the regulations.</p>
-                                </li>
-                                <li>
-                                    <div class='img med' style="background-image: url(https://d.newsweek.com/en/full/1619329/closing-down-sale-brooklyn.webp?w=95&h=95&f=a19a248814a5791dc15e8ec7d32a9b6f);"></div>
-                                    <h3>Trump Heading Into 2020 With Similar Black Unemployment Rate to Obama</h3>
-                                    <p>New data released on Friday showed that Black unemployment stood at more than 14 percent in July this year.</p>
-                                </li>
-                                <li>
-                                    <div class='img med' style="background-image: url(As Feds Pull Out of Portland, Lawsuits Follow Them);"></div>
-                                    <h3>As Feds Pull Out of Portland, Lawsuits Follow Them</h3>
-                                    <p>The federal government has faced a series of lawsuits over its Portland deployment.</p>
-                                </li>
-                                <li>
-                                    <div class='img med' style="background-image: url(https://d.newsweek.com/en/full/1619342/meadows-mnuchin.webp?w=95&h=95&f=499ae37610e0203ad4b6dfba2a0be3ac);"></div>
-                                    <h3>Where GOP, Democrats Agree, Disagree on Brink of Deal's Collapse</h3>
-                                    <p>"There's a handful of very big issues that we are still very far apart," Treasury Secretary Steve Mnuchin told reporters.</p>
-                                </li>
-                                <li>
-                                    <div class='img med' style="background-image: url(https://d.newsweek.com/en/full/1619308/covid-19-cases-rise-europe.webp?w=95&h=95&f=8f672651ba5fecce1681311d9fc3329e);"></div>
-                                    <h3>Borders Across Europe Shutting as COVID-19 Cases Spike</h3>
-                                    <p>France and Turkey have both seen rises of over 1,000 COVID-19 cases in a day, sparking fears of a second wave of the virus.</p>
-                                </li>
-                                <li>
-                                    <div class='img med' style="background-image: url(https://d.newsweek.com/en/full/1619324/jerry-falwell-jr.webp?w=95&h=95&f=6440e884ec5eb3ab8db3656bfcee6f5a);"></div>
-                                    <h3>Republican Calls for Falwell Jr. to Resign From Liberty University </h3>
-                                    <p>Republican Representative Mark Walker criticized Liberty University President Jerry Falwell Jr. for a recent picture he posted.</p>
-                                </li>
-                                <li>
-                                    <div class='img med' style="background-image: url(https://d.newsweek.com/en/full/1619227/trump.webp?w=95&h=95&f=8e52a9fd6e6fd58851b2a9bf8f3db842);"></div>
-                                    <h3>As Stimulus Talks Fail, Trump Plots to Sideline Congress With Exec Orders</h3>
-                                    <p>Negotiations on a bipartisan have faltered, with both sides indicating there has been a struggle to reach a compromise.</p>
-                                </li>
-                                <li>
-                                    <div class='img med' style="background-image: url(https://d.newsweek.com/en/full/1619246/oprah-winfrey.webp?w=95&h=95&f=32c57909d427a1b9a4d8a483aa7d6552);"></div>
-                                    <h3>Oprah Erects 26 Breonna Taylor Billboards in Louisville Demanding Justice</h3>
-                                    <p>Oprah Winfrey has launched a billboard campaign to demand justice for Breonna Taylor by erecting 26 billboards.</p>
-                                </li>
-                            </ul>
+                            <h2 class="title">More Stories</h2>
+                            <article class='clearfix'>
+                                <div class='img med' style="background-image: url(https://d.newsweek.com/en/full/1619684/baby-formula-bottle.webp?w=95&h=95&f=ae083f676ebdbcb1f099f679d7ee3d56);"></div>
+                                <h3>Suspects Charged for Stealing $11,000 in Baby Formula and Red Bull</h3>
+                                <p>Suspects allegedly stole items including dog food, soda, and Red Bull to conceal the formula.</p>
+                            </article>
+                            <article class='clearfix'>
+                                <div class='img med' style="background-image: url(https://d.newsweek.com/en/full/1619692/us-capitol-building.webp?w=95&h=95&f=c6e978d57871aa524d9043d6b22a87b9);"></div>
+                                <h3>Georgia Democrat Faces Calls to Drop Out of Senate Race Over 'Racist' Novel</h3>
+                                <p>Matt Lieberman, the son of the former vice presidential nominee, self-published a book containing uses of the N-word and the main character being positive toward members of the KKK.</p>
+                            </article>
+                            <article class='clearfix'>
+                                <div class='img med' style="background-image: url(https://d.newsweek.com/en/full/1619681/prisoners-chains.webp?w=95&h=95&f=ded575e881c081fd5cd3de830fcf7cbd);"></div>
+                                <h3>196 Fugitives Walked Out of a Halfway House in Texas</h3>
+                                <p>Dozens of violent criminals and sexual predators are now fugitives after skipping parole in Houston.</p>
+                            </article>
+                            <article class='clearfix'>
+                                <div class='img med' style="background-image: url(https://d.newsweek.com/en/full/1619678/donald-trump-bedminster-new-jersey.webp?w=95&h=95&f=d7c1c31f60e4c16b563c25592c452271);"></div>
+                                <h3>Trump Says China Would 'Love' It if He Loses to Joe Biden in November</h3>
+                                <p>The president also said that China would "own" the U.S. if he were to lose against Biden in the coming election.</p>
+                            </article>
+                            <article class='clearfix'>
+                                <div class='img med' style="background-image: url(https://d.newsweek.com/en/full/1619676/wedding-during-coronavirus-pandemic.webp?w=95&h=95&f=080ca9583464f03805ff359124cd9b89);"></div>
+                                <h3>Brides Angry at Mass. Gov. Baker for Slashing Guest List During COVID-19</h3>
+                                <p>The number of outside guests allowed at events will be cut by 50 percent on Tuesday in the state of Massachusetts, with possible fines for those who disobey the regulations.</p>
+                            </article>
+                            <article class='clearfix'>
+                                <div class='img med' style="background-image: url(https://d.newsweek.com/en/full/1619329/closing-down-sale-brooklyn.webp?w=95&h=95&f=a19a248814a5791dc15e8ec7d32a9b6f);"></div>
+                                <h3>Trump Heading Into 2020 With Similar Black Unemployment Rate to Obama</h3>
+                                <p>New data released on Friday showed that Black unemployment stood at more than 14 percent in July this year.</p>
+                            </article>
+                            <article class='clearfix'>
+                                <div class='img med' style="background-image: url(As Feds Pull Out of Portland, Lawsuits Follow Them);"></div>
+                                <h3>As Feds Pull Out of Portland, Lawsuits Follow Them</h3>
+                                <p>The federal government has faced a series of lawsuits over its Portland deployment.</p>
+                            </article>
+                            <article class='clearfix'>
+                                <div class='img med' style="background-image: url(https://d.newsweek.com/en/full/1619342/meadows-mnuchin.webp?w=95&h=95&f=499ae37610e0203ad4b6dfba2a0be3ac);"></div>
+                                <h3>Where GOP, Democrats Agree, Disagree on Brink of Deal's Collapse</h3>
+                                <p>"There's a handful of very big issues that we are still very far apart," Treasury Secretary Steve Mnuchin told reporters.</p>
+                            </article>
+                            <article class='clearfix'>
+                                <div class='img med' style="background-image: url(https://d.newsweek.com/en/full/1619308/covid-19-cases-rise-europe.webp?w=95&h=95&f=8f672651ba5fecce1681311d9fc3329e);"></div>
+                                <h3>Borders Across Europe Shutting as COVID-19 Cases Spike</h3>
+                                <p>France and Turkey have both seen rises of over 1,000 COVID-19 cases in a day, sparking fears of a second wave of the virus.</p>
+                            </article>
+                            <article class='clearfix'>
+                                <div class='img med' style="background-image: url(https://d.newsweek.com/en/full/1619324/jerry-falwell-jr.webp?w=95&h=95&f=6440e884ec5eb3ab8db3656bfcee6f5a);"></div>
+                                <h3>Republican Calls for Falwell Jr. to Resign From Liberty University </h3>
+                                <p>Republican Representative Mark Walker criticized Liberty University President Jerry Falwell Jr. for a recent picture he posted.</p>
+                            </article>
+                            <article class='clearfix'>
+                                <div class='img med' style="background-image: url(https://d.newsweek.com/en/full/1619227/trump.webp?w=95&h=95&f=8e52a9fd6e6fd58851b2a9bf8f3db842);"></div>
+                                <h3>As Stimulus Talks Fail, Trump Plots to Sideline Congress With Exec Orders</h3>
+                                <p>Negotiations on a bipartisan have faltered, with both sides indicating there has been a struggle to reach a compromise.</p>
+                            </article>
+                            <article class='clearfix'>
+                                <div class='img med' style="background-image: url(https://d.newsweek.com/en/full/1619246/oprah-winfrey.webp?w=95&h=95&f=32c57909d427a1b9a4d8a483aa7d6552);"></div>
+                                <h3>Oprah Erects 26 Breonna Taylor Billboards in Louisville Demanding Justice</h3>
+                                <p>Oprah Winfrey has launched a billboard campaign to demand justice for Breonna Taylor by erecting 26 billboards.</p>
+                            </article>
                         </section>
                     </div>
                 </div>
-                <div class='stack-right col-lg-3'>
+                <div class='stack-right col-lg-3 order-3'>
                     <section class='the-debate'>
                         <h2>The Debate</h2>
-                        <div>
-                            <h3>Religious Freedom Is Under Attack Like Never Before</h3>
-                            <p>By Kelly Shackelford</p>
-                            <div class="img small left" style="background-image: url(https://d.newsweek.com/en/full/1589023/kelly-shackelford.webp?w=150&h=150&f=b9f49e148e5ee0c1a57d167c4e7b0875);"></div>
+                        <div class="debate-1">
+                            <div class='debate clearfix'>
+                                <div class="img small left" style="background-image: url(https://d.newsweek.com/en/full/1589023/kelly-shackelford.webp?w=150&h=150&f=b9f49e148e5ee0c1a57d167c4e7b0875);"></div>
+                                <h3>Religious Freedom Is Under Attack Like Never Before</h3>
+                                <p><span>By </span>Kelly Shackelford</p>
+                            </div>
                         </div>
                         <div class='debate-deco'>
-
+                            <div class="debate-deco-vs">VS</div>
                         </div>
-                        <div>
-                            <h3>Preserve Our Traditions of Religious Freedom and Church-State Separation</h3>
-                            <p>By Melissa Rogers</p>
-                            <div class="img small right" style="background-image: url(https://d.newsweek.com/en/full/1618671/melissa-rogers.webp?w=150&h=150&f=8f0ec46c99911eb4bb031375223099b1);"></div>
+                        <div class="debate-2">
+                            <div class="debate clearfix">
+                                <div class="img small right" style="background-image: url(https://d.newsweek.com/en/full/1618671/melissa-rogers.webp?w=150&h=150&f=8f0ec46c99911eb4bb031375223099b1);"></div>
+                                <h3>Preserve Our Traditions of Religious Freedom and Church-State Separation</h3>
+                                <p><span>By </span>Melissa Rogers</p>
+                            </div>
                         </div>
                     </section>
                     <section class='opinion'>
                         <h2>Opinion</h2>
                         <ul>
                             <li>
-                                <h3>China Threatens Bold Grab for Japanese Territory This Month. Who's Next?</h3>
-                                <h4>By Gordon G. Chang</h4>
                                 <div class="img small" style="background-image: url(https://d.newsweek.com/en/full/1595774/gordon-chang.webp?w=63&h=63&f=e6ac7c2e3f20ff658db6088a2c2ebef7);"></div>
+                                <div class="info">
+                                    <h3>China Threatens Bold Grab for Japanese Territory This Month. Who's Next?</h3>
+                                    <p>By Gordon G. Chang</p>
+                                </div>
                             </li>
                             <li>
-                                <h3>The New COVID-19 First Responders? School Nurses </h3>
-                                <h4>By Dara Kass and Robin Cogan</h4>
                                 <div class="img small" style="background-image: url(https://d.newsweek.com/en/full/1619359/dara-kass-robin-cogan.webp?w=63&h=63&f=6860590005f7c31043c7f682d4b040cb);"></div>
+                                <div class="info">
+                                    <h3>The New COVID-19 First Responders? School Nurses </h3>
+                                    <p>By Dara Kass and Robin Cogan</p>
+                                </div>
                             </li>
                             <li>
-                                <h3>With Trump's Iran Envoy Out, Change Is Needed </h3>
-                                <h4>By Daniel R. DePetris</h4>
                                 <div class="img small" style="background-image: url(https://d.newsweek.com/en/full/100577/daniel-r-depetris.webp?w=63&h=63&f=557e36e1b094f95cf0416216ba9ecaa7);"></div>
+                                <div class="info">
+                                    <h3>With Trump's Iran Envoy Out, Change Is Needed </h3>
+                                    <p>By Daniel R. DePetris</p>
+                                </div>
                             </li>
                             <li>
-                                <h3>Why Can't We Join Forces on All Diseases Like We Do on Coronavirus? </h3>
-                                <h4>By Annette Bakker</h4>
                                 <div class="img small" style="background-image: url(https://d.newsweek.com/en/full/1619589/annette-bakker.webp?w=63&h=63&f=94850c85dcbef5c3f4d60fa25e26ef07);"></div>
+                                <div class="info">
+                                    <h3>Why Can't We Join Forces on All Diseases Like We Do on Coronavirus? </h3>
+                                    <p>By Annette Bakker</p>
+                                </div>
                             </li>
                             <li>
-                                <h3>Can We Seize the Opportunity for Lebanon and the Region Around It?</h3>
-                                <h4>By Jason D. Greenblatt</h4>
                                 <div class="img small" style="background-image: url(https://d.newsweek.com/en/full/1619211/jason-d-greenblatt.webp?w=63&h=63&f=4aeea1df16a1a6ab73079c95cbf1048d);"></div>
+                                <div class="info">
+                                    <h3>Can We Seize the Opportunity for Lebanon and the Region Around It?</h3>
+                                    <p>By Jason D. Greenblatt</p>
+                                </div>
                             </li>
                             <li>
-                                <h3>Looking Back at the Democrats' Failed Partisan Impeachment</h3>
-                                <h4>By Jim Jordan and Doug Collins</h4>
                                 <div class="img small" style="background-image: url(https://d.newsweek.com/en/full/1618995/jim-jordan-doug-collins.webp?w=63&h=63&f=24e3403e6777dac998dadebeae355849);"></div>
+                                <div class="info">
+                                    <h3>Looking Back at the Democrats' Failed Partisan Impeachment</h3>
+                                    <p>By Jim Jordan and Doug Collins</p>
+                                </div>
                             </li>
                         </ul>
                     </section>
@@ -248,45 +264,49 @@
                 </footer>
             </div>
             <section class='in-the-magazine'>
-                <header>In The Magazine</header>
+                <header class='title'>
+                    <p>In The Magazine</p>
+                </header>
                 <div class="row">
                     <div class='article-cover col-md-3'>
                         <div class="img" style="background-image: url(https://d.newsweek.com/en/full/1618294/cover-august-14-2020.webp?w=726&h=969&q=90&f=ae25fb38f80c75fb8391577225eb75e1);"></div>
-                        <a href=''>See All Features ></a>
+                        <div class="see-all-features">
+                            <a href=''>See All Features ></a>
+                        </div>
                     </div>
                     <div class="col-md-3"> 
                         <div class="img" style="background-image: url(https://d.newsweek.com/en/full/1617752/trump-election-nightmare-2020-cover.webp?w=767&h=512&q=90&f=dcbe9cb97fde237aae0c38491fb6d7d1);"></div>
-                        <h2>Cover Politics</h2>
-                        <h3>How Trump Could Turn Troubled 2020 Election into an Unprecedented Disaster</h3>
+                        <h2><span class='mag'>Cover</span> <span class='cat'>Politics</span></h2>
+                        <h5>How Trump Could Turn Troubled 2020 Election into an Unprecedented Disaster</h5>
                     </div>
                     <div class="col-md-3">
                         <div class="img" style="background-image: url(https://d.newsweek.com/en/full/1612211/blue-invasion.webp?w=767&h=512&l=48&t=55&q=90&f=80fbe378a54100fd949e3597e7846508);"></div>
-                        <h2>Features Politics</h2>
-                        <h3>Will the blue invasion of red state America finally pay off in 2020?</h3>
+                        <h2><span class='mag'>Features</span> <span class='cat'>Politics</span></h2>
+                        <h5>Will the blue invasion of red state America finally pay off in 2020?</h5>
                     </div>
                     <div class="col-md-3">
                         <div class="img" style="background-image: url(https://d.newsweek.com/en/full/1612463/congressman-john-lewis.webp?w=767&h=512&q=90&f=907fb48abde61751ddf0f3d733263f98);"></div>
-                        <h2>Periscope Opinion</h2>
-                        <h3>In the Name of John Lewis, Let Us Restore the Voting Rights Act </h3>
+                        <h2><span class='mag'>Periscope</span> <span class='cat'>Opinion</span></h2>
+                        <h5>In the Name of John Lewis, Let Us Restore the Voting Rights Act </h5>
                     </div>
                     <div class="col-md-3">
                         <div class="img" style="background-image: url(https://d.newsweek.com/en/full/1613264/per-bunker-banner.webp?w=767&h=512&l=34&t=33&q=90&f=cde0179c4cb12d20eea2d45e7fb91ffc);"></div>
-                        <h2>Periscope Culture</h2>
-                        <h3>A Look Inside the Luxury Bunker Built by Doomsday Preppers for the Apocalypse</h3>
+                        <h2><span class='mag'>Periscope</span> <span class='cat'>Culture</span></h2>
+                        <h5>A Look Inside the Luxury Bunker Built by Doomsday Preppers for the Apocalypse</h5>
                     </div>
                     <div class="col-md-3">
                         <div class="img" style="background-image: url(https://d.newsweek.com/en/full/1614110/galicia-spain-beach-coronavirus-july-2020.webp?w=767&h=512&q=90&f=1fb0c585b4cf22ca8a7b6a874fc192b5);"></div>
-                        <h2>Periscope Culture</h2>
-                        <h3>Europe Fears Coronavirus Second Wave Amid Spikes in Spain, France, Germany </h3>
+                        <h2><span class='mag'>Periscope</span> <span class='cat'>Culture</span></h2>
+                        <h5>Europe Fears Coronavirus Second Wave Amed Spikes in Spain, France, Germany </h5>
                     </div>
                     <div class='in-focus col-md-3'>
                         <div class="img" style="background-image: url(https://compote.slate.com/images/d823cf2d-7108-4492-8a2c-e409578e1fe9.jpeg?width=780&height=520&rect=6240x4160&offset=0x0);"></div>
-                        <h3>Street Hassle</h3>
+                        <h5>Street Hassle</h5>
                     </div>
                 </div>
             </section>
             <div class='editors-pick'>
-                <header>
+                <header class='title'>
                     N Editor's Pick
                 </header>
                 <section class='row'>
@@ -334,172 +354,172 @@
             </div>
 
             <section class='US sect'>
-                <h2>U.S.</h2>
+                <h2 class='block-title'>U.S.</h2>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="img" style="background-image: url(https://d.newsweek.com/en/full/1620104/donald-trump.webp?w=767&h=512&f=28be78bad9d92d2d3dc764c95efb22f4);"></div>
-                        <h3>Trump's Orders Offer No Lifeline for Businesses, Schools and States</h3>
+                        <h4>Trump's Orders Offer No Lifeline for Businesses, Schools and States</h4>
                     </div>
                     <div class="col-md-4">
                         <div class="img" style="background-image: url(https://d.newsweek.com/en/full/1620092/church-los-angeles.webp?w=767&h=512&f=72af4df64b3b8a457a8be860cff7351e);"></div>
-                        <h3>California Churches Defy Indoor Sermon Ban, Don't Require Masks to Be Worn</h3>
+                        <h4>California Churches Defy Indoor Sermon Ban, Don't Require Masks to Be Worn</h4>
                     </div>
                     <ul class='mini article-sect col-md-4'>
                         <li>
-                            <div class="img mid" style="background-image: url(https://d.newsweek.com/en/full/1620090/chuck-schumer-donald-trump-coronavirus-package-call.webp?w=767&h=512&f=d07857195e6941da8c6349bb10700271);"></div>
-                            <h3>Schumer Denies Democrats Called Trump Asking to Resume Stimulus Talks</h3>
+                            <div class="img med" style="background-image: url(https://d.newsweek.com/en/full/1620090/chuck-schumer-donald-trump-coronavirus-package-call.webp?w=767&h=512&f=d07857195e6941da8c6349bb10700271);"></div>
+                            <h4>Schumer Denies Democrats Called Trump Asking to Resume Stimulus Talks</h4>
                         </li>
                         <li>
-                            <div class="img mid" style="background-image: url(https://d.newsweek.com/en/full/1620110/baltimore-house-explosion-fire.webp?w=95&h=95&l=48&t=50&f=cc2fa68ea380e40a1472f55f0fa25c05);"></div>
-                            <h3>Baltimore House Explosion Kills At Least 1,Traps Others</h3>
+                            <div class="img med" style="background-image: url(https://d.newsweek.com/en/full/1620110/baltimore-house-explosion-fire.webp?w=95&h=95&l=48&t=50&f=cc2fa68ea380e40a1472f55f0fa25c05);"></div>
+                            <h4>Baltimore House Explosion Kills At Least 1,Traps Others</h4>
                         </li>
                         <li>
-                            <div class="img mid" style="background-image: url(https://d.newsweek.com/en/full/1620083/chicago.webp?w=95&h=95&f=71e03a668c899a8e38385d94b75d462c);"></div>
-                            <h3>What Happened in Chicago Last Night? How Looting and Rioting Broke Out</h3>
+                            <div class="img med" style="background-image: url(https://d.newsweek.com/en/full/1620083/chicago.webp?w=95&h=95&f=71e03a668c899a8e38385d94b75d462c);"></div>
+                            <h4>What Happened in Chicago Last Night? How Looting and Rioting Broke Out</h4>
                         </li>
                     </ul>
                 </div>
             </section>
             <section class="world sect">
-                <h2>World</h2>
+                <h2 class="block-title">World</h2>
                 <div class='row'>
                     <div class="col-md-4">
                         <div class="img" style="background-image: url(https://d.newsweek.com/en/full/1620028/belarus-minsk-election-protests-violence-alexander-lukashenko.webp?w=767&h=512&f=53774cc22aea1d3d78c1e951f590f750);"></div>
-                        <h3>Photos, Videos of Belarus Unrest Show Police Beating Election Protesters</h3>
+                        <h4>Photos, Videos of Belarus Unrest Show Police Beating Election Protesters</h4>
                     </div>
                     <div class="col-md-4">
                         <div class="img" style="background-image: url(https://d.newsweek.com/en/full/1619976/belarus.webp?w=767&h=512&f=3d7eeae7b1edb244ec1fa991aef05597);"></div>
-                        <h3>Protester takes on police force in video as unrest breaks out in Belarus</h3>
+                        <h4>Protester takes on police force in video as unrest breaks out in Belarus</h4>
                     </div>
                     <div class="col-md-4">
                         <ul class='mini article-sect'>
                             <li>
-                                <div class="img mid" style="background-image: url(https://d.newsweek.com/en/full/1619948/hong-kong-elections-china-five-eyes-canada.webp?w=767&h=512&f=fbcf5dd1b8cc0684a4bba2ed0afda5d0);"></div>
-                                <h3>China Warns U.S., Five Eyes Allies to Back Off Over Hong Kong Elections</h3>
+                                <div class="img med" style="background-image: url(https://d.newsweek.com/en/full/1619948/hong-kong-elections-china-five-eyes-canada.webp?w=767&h=512&f=fbcf5dd1b8cc0684a4bba2ed0afda5d0);"></div>
+                                <h4>China Warns U.S., Five Eyes Allies to Back Off Over Hong Kong Elections</h4>
                             </li>
                             <li>
-                                <div class="img mid" style="background-image: url(https://d.newsweek.com/en/full/1619840/beirut-protests.webp?w=95&h=95&f=0a739582b506ec202b68ccd367c91549);"></div>
-                                <h3>Countries Pledge Nearly $300M in Aid to Lebanon Following Explosion</h3>
+                                <div class="img med" style="background-image: url(https://d.newsweek.com/en/full/1619840/beirut-protests.webp?w=95&h=95&f=0a739582b506ec202b68ccd367c91549);"></div>
+                                <h4>Countries Pledge Nearly $300M in Aid to Lebanon Following Explosion</h4>
                             </li>
                             <li>
-                                <div class="img mid" style="background-image: url(https://d.newsweek.com/en/full/1619807/alberta-oil-sands.webp?w=95&h=95&f=f26603d8301c62e03ad908b3f5690d53);"></div>
-                                <h3>Professor Sits in Tree 82 Feet From Ground to Protest Pipeline Expansion</h3>
+                                <div class="img med" style="background-image: url(https://d.newsweek.com/en/full/1619807/alberta-oil-sands.webp?w=95&h=95&f=f26603d8301c62e03ad908b3f5690d53);"></div>
+                                <h4>Professor Sits in Tree 82 Feet From Ground to Protest Pipeline Expansion</h4>
                             </li>
                         </ul>
                     </div>
                 </div>
             </section>
             <section class="business sect">
-                <h2>Business</h2>
+                <h2 class='block-title'>Business</h2>
                 <div class='row'>
                     <div class="col-md-4">
                         <div class="img" style="background-image: url(https://d.newsweek.com/en/full/1619758/anna-peric-planet-fitness-mask.webp?w=767&h=512&f=a74eb70ce0eefcd4545a199002b671e9);"></div>
-                        <h3>Ohio Woman Refuses Mask in Planet Fitness, Accuses Staffer of 'Harassment'</h3>
+                        <h4>Ohio Woman Refuses Mask in Planet Fitness, Accuses Staffer of 'Harassment'</h4>
                     </div>
                     <div class="col-md-4">
                         <div class="img" style="background-image: url(https://d.newsweek.com/en/full/1618617/closed-covid-19-coronavirus.webp?w=767&h=512&f=44fde1eb261f40b0ccb6c7bfc05fa546);"></div>
-                        <h3>Private Sector Jobs Growth Six Times Worse Than Expected in July</h3>
+                        <h4>Private Sector Jobs Growth Six Times Worse Than Expected in July</h4>
                     </div>
                     <div class="col-md-4">
                         <ul class='mini article-sect'>
                             <li>
-                                <div class="img mid" style="background-image: url(https://d.newsweek.com/en/full/1618495/donald-trump-press-briefing.webp?w=767&h=512&f=0a7a795488f51a6b20c41994697b5db0);"></div>
-                                <h3>Without Unemployment Boost, Jobless Households Face August Bills Crisis</h3>
+                                <div class="img med" style="background-image: url(https://d.newsweek.com/en/full/1618495/donald-trump-press-briefing.webp?w=767&h=512&f=0a7a795488f51a6b20c41994697b5db0);"></div>
+                                <h4>Without Unemployment Boost, Jobless Households Face August Bills Crisis</h4>
                             </li>
                             <li>
-                                <div class="img mid" style="background-image: url(https://d.newsweek.com/en/full/1618442/new-york-stock-exchange.webp?w=95&h=95&f=2146b5bf0587df51ed84a53ea2e48386);"></div>
-                                <h3>Why Are U.S. Stock Markets Booming When Everything Is So Bleak?</h3>
+                                <div class="img med" style="background-image: url(https://d.newsweek.com/en/full/1618442/new-york-stock-exchange.webp?w=95&h=95&f=2146b5bf0587df51ed84a53ea2e48386);"></div>
+                                <h4>Why Are U.S. Stock Markets Booming When Everything Is So Bleak?</h4>
                             </li>
                             <li>
-                                <div class="img mid" style="background-image: url(https://d.newsweek.com/en/full/1613906/hand-sanitizer-recall.webp?w=95&h=95&f=63d949c5f146ff26d3aa3fba2c9207f4);"></div>
-                                <h3>Walmart, Target Among Stores Selling These Newly-Recalled Hand Sanitizers</h3>
+                                <div class="img med" style="background-image: url(https://d.newsweek.com/en/full/1613906/hand-sanitizer-recall.webp?w=95&h=95&f=63d949c5f146ff26d3aa3fba2c9207f4);"></div>
+                                <h4>Walmart, Target Among Stores Selling These Newly-Recalled Hand Sanitizers</h4>
                             </li>
                         </ul>
                     </div>
                 </div>
             </section>
             <section class="tech&science sect">
-                <h2>Tech & Science</h2>
+                <h2 class='block-title'>Tech & Science</h2>
                 <div class='row'>
                     <div class="col-md-4">
                         <div class="img" style="background-image: url(https://d.newsweek.com/en/full/1619506/knockaround-sunglasses-review.webp?w=767&h=512&f=ff0774721ad6c27ecf44651ecb0a5db7);"></div>
-                        <h3>Knockaround Sunglasses Review: The Best Affordable Sunglasses</h3>
+                        <h4>Knockaround Sunglasses Review: The Best Affordable Sunglasses</h4>
                     </div>
                     <div class="col-md-4">
                         <div class="img" style="background-image: url(https://d.newsweek.com/en/full/1620058/sun.webp?w=767&h=512&f=cf2022588a43cef658bc163a90c00d08);"></div>
-                        <h3>Mars-sized 'Light-bridge' on Sun Appears to Signal Break-up of Vast Sunspot</h3>
+                        <h4>Mars-sized 'Light-bridge' on Sun Appears to Signal Break-up of Vast Sunspot</h4>
                     </div>
                     <div class="col-md-4">
                         <ul class='mini article-sect'>
                             <li>
-                                <div class="img mid" style="background-image: url(https://d.newsweek.com/en/full/1619431/mark-zuckerberg.webp?w=767&h=512&f=7e905506403222c5dfb300926602fe3d);"></div>
-                                <h3>Mark Zuckerberg Becomes Centibillionaire after Trump Threatens TikTok Ban</h3>
+                                <div class="img med" style="background-image: url(https://d.newsweek.com/en/full/1619431/mark-zuckerberg.webp?w=767&h=512&f=7e905506403222c5dfb300926602fe3d);"></div>
+                                <h4>Mark Zuckerberg Becomes Centibillionaire after Trump Threatens TikTok Ban</h4>
                             </li>
                             <li>
-                                <div class="img mid" style="background-image: url(https://d.newsweek.com/en/full/1619294/donald-trump.webp?w=95&h=95&f=73de1d11fc17b0bceb0c9ad8cd3b1020);"></div>
-                                <h3>Tencent Loses $35bn after Trump Executive Order but Fortnite Should Be Fine</h3>
+                                <div class="img med" style="background-image: url(https://d.newsweek.com/en/full/1619294/donald-trump.webp?w=95&h=95&f=73de1d11fc17b0bceb0c9ad8cd3b1020);"></div>
+                                <h4>Tencent Loses $35bn after Trump Executive Order but Fortnite Should Be Fine</h4>
                             </li>
                             <li>
-                                <div class="img mid" style="background-image: url(https://d.newsweek.com/en/full/1619261/tornado.webp?w=95&h=95&f=0835b2b3d34fe1b2ecb873df8dea3f07);"></div>
-                                <h3>Tornado From Isaias Breaks Delaware Record With 29-Mile Path</h3>
+                                <div class="img med" style="background-image: url(https://d.newsweek.com/en/full/1619261/tornado.webp?w=95&h=95&f=0835b2b3d34fe1b2ecb873df8dea3f07);"></div>
+                                <h4>Tornado From Isaias Breaks Delaware Record With 29-Mile Path</h4>
                             </li>
                         </ul>
                     </div>
                 </div>
             </section>
             <section class="culture sect">
-                <h2>Culture</h2>
+                <h2 class='block-title'>Culture</h2>
                 <div class='row'>
                     <div class="col-md-4">
                         <div class="img" style="background-image: url(https://d.newsweek.com/en/full/1618802/big-brother-22-house-guests.webp?w=767&h=512&f=9ce82f1a52c74ac98a798879a494b338);"></div>
-                        <h3>The 'Big Brother' All-Stars Alliances That Have Already Begun, Ranked</h3>
+                        <h4>The 'Big Brother' All-Stars Alliances That Have Already Begun, Ranked</h4>
                     </div>
                     <div class="col-md-4">
                         <div class="img" style="background-image: url(https://d.newsweek.com/en/full/1620075/getty-images-metallica.webp?w=767&h=512&f=8687169818d1d9e21331f6f03e09810d);"></div>
-                        <h3>Metallica Drive-in Concert: Presale Details, Theaters Near Me and More</h3>
+                        <h4>Metallica Drive-in Concert: Presale Details, Theaters Near Me and More</h4>
                     </div>
                     <div class="col-md-4">
                         <ul class='mini article-sect'>
                             <li>
-                                <div class="img mid" style="background-image: url(https://d.newsweek.com/en/full/1618668/quibi-mapleworth-murders-john-lutz.webp?w=767&h=512&f=1f2e882ef259b832d8d0415e9d9261ee);"></div>
-                                <h3>John Lutz Pieces Together Crime-Spoof Quibi 'Mapleworth Murders'</h3>
+                                <div class="img med" style="background-image: url(https://d.newsweek.com/en/full/1618668/quibi-mapleworth-murders-john-lutz.webp?w=767&h=512&f=1f2e882ef259b832d8d0415e9d9261ee);"></div>
+                                <h4>John Lutz Pieces Together Crime-Spoof Quibi 'Mapleworth Murders'</h4>
                             </li>
                             <li>
-                                <div class="img mid" style="background-image: url(https://d.newsweek.com/en/full/1620071/reels.webp?w=95&h=95&f=09acf9e2394631dece435cf2e3a595cc);"></div>
-                                <h3>Big TikTok Stars Like Evan Berger and Katie Feeney Are Making Reels Now</h3>
+                                <div class="img med" style="background-image: url(https://d.newsweek.com/en/full/1620071/reels.webp?w=95&h=95&f=09acf9e2394631dece435cf2e3a595cc);"></div>
+                                <h4>Big TikTok Stars Like Evan Berger and Katie Feeney Are Making Reels Now</h4>
                             </li>
                             <li>
-                                <div class="img mid" style="background-image: url(https://d.newsweek.com/en/full/1620077/selling-sunset-christina-karamo.webp?w=95&h=95&l=49&t=19&f=a7e59d43b8255b50e40ced4ea534387a);"></div>
-                                <h3>'Selling Sunset' Fans Blast Karamo of 'Queer Eye' for Christine Friendship</h3>
+                                <div class="img med" style="background-image: url(https://d.newsweek.com/en/full/1620077/selling-sunset-christina-karamo.webp?w=95&h=95&l=49&t=19&f=a7e59d43b8255b50e40ced4ea534387a);"></div>
+                                <h4>'Selling Sunset' Fans Blast Karamo of 'Queer Eye' for Christine Friendship</h4>
                             </li>
                         </ul>
                     </div>
                 </div>
             </section>
             <section class="sports sect">
-                <h2>Sports</h2>
+                <h2 class='block-title'>Sports</h2>
                 <div class='row'>
                     <div class="col-md-4">
                         <div class="img" style="background-image: url(https://d.newsweek.com/en/full/1619982/justin-fields-ohio-state.webp?w=767&h=512&f=11ce721757c565dbc7db7e22908061eb);"></div>
-                        <h3>Which Players Have Supported the 'We Want to Play' NCAA Movement?</h3>
+                        <h4>Which Players Have Supported the 'We Want to Play' NCAA Movement?</h4>
                     </div>
                     <div class="col-md-4">
                         <div class="img" style="background-image: url(https://d.newsweek.com/en/full/1617924/sean-mcvay-los-angeles-rams.webp?w=767&h=512&f=c76d901367bc2808e451e4278b208453);"></div>
-                        <h3>'Hard Knocks': Start Date, Where to Watch, Which NFL Teams Are on HBO Show?</h3>
+                        <h4>'Hard Knocks': Start Date, Where to Watch, Which NFL Teams Are on HBO Show?</h4>
                     </div>
                     <div class="col-md-4">
                         <ul class='mini article-sect'>
                             <li>
-                                <div class="img mid" style="background-image: url(https://d.newsweek.com/en/full/1616499/aaron-rodgers-jimmy-garoppolo-green-bay-packers.webp?w=767&h=512&f=ba1d5674eefe9c4d18c6c8728233dbb1);"></div>
-                                <h3>Thursday Night Football Schedule: Full Slate of Games, Times, How to Watch</h3>
+                                <div class="img med" style="background-image: url(https://d.newsweek.com/en/full/1616499/aaron-rodgers-jimmy-garoppolo-green-bay-packers.webp?w=767&h=512&f=ba1d5674eefe9c4d18c6c8728233dbb1);"></div>
+                                <h4>Thursday Night Football Schedule: Full Slate of Games, Times, How to Watch</h4>
                             </li>
                             <li>
-                                <div class="img mid" style="background-image: url(https://d.newsweek.com/en/full/1619884/jaylen-brown-boston-celtics-nba.webp?w=95&h=95&f=52d758a22e5e7dc226794ffdecaff21d);"></div>
-                                <h3>Jaylen Brown Says Police Brutality is 'Domestic Terrorism'</h3>
+                                <div class="img med" style="background-image: url(https://d.newsweek.com/en/full/1619884/jaylen-brown-boston-celtics-nba.webp?w=95&h=95&f=52d758a22e5e7dc226794ffdecaff21d);"></div>
+                                <h4>Jaylen Brown Says Police Brutality is 'Domestic Terrorism'</h4>
                             </li>
                             <li>
-                                <div class="img mid" style="background-image: url(https://d.newsweek.com/en/full/1619851/clemson-quarterback-trevor-lawrence.webp?w=95&h=95&f=78704ef7a6ae3867794a13deffd64719);"></div>
-                                <h3>Clemson QB Trevor Lawrence Sparks Movement to Allow Football in 2020</h3>
+                                <div class="img med" style="background-image: url(https://d.newsweek.com/en/full/1619851/clemson-quarterback-trevor-lawrence.webp?w=95&h=95&f=78704ef7a6ae3867794a13deffd64719);"></div>
+                                <h4>Clemson QB Trevor Lawrence Sparks Movement to Allow Football in 2020</h4>
                             </li>
                         </ul>
                     </div>
@@ -508,19 +528,18 @@
 
             <div class="bottom row">
                 <div class='subscribe row col-12 col-lg-8'>
-                    <h2>Subscribe</h2>
+                    <h2 class='block-title'>Subscribe</h2>
                     <div class="img" style="background-image: url(https://d.newsweek.com/en/full/1618294/cover-august-14-2020.jpg?w=170&q=95&f=f52aeae07248b670928a3f583a3ebda9);"></div>
                 </div>
                 <div class='newsletter col-lg-4'>
-                    <h2>Newsletter</h2>
-                    <div class=''>
-                        <div class='newsletter img d-none d-md-block' style="background-image: url(https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5);">
-                        </div>
+                    <h2 class="">Newsletter</h2>
+                    <div class='starting-5'>
+                        <div class='newsletter img d-none d-md-block' style="background-image: url(https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5);"></div>
                         <h5>The Starting 5</h5>
                         <p>See why nearly a quarter of a million subscribers begin their day with the Starting 5.</p>
                         <form id=signup>
-                            <input type="email" name='email' placeholder="Email address">
-                            <button type="submit"></button>
+                            <input class='form-email' type="email" name='email' placeholder="Email address">
+                            <input class='form-submit' type="submit" value='FREE SIGN UP >'></button>
                         </form>
                     </div>
                 </div>
@@ -537,7 +556,6 @@
                 </ul>
             </footer>
         </div>
-
 
 
 

@@ -1,14 +1,18 @@
+:root {
+    --reddy: rgb(247, 34, 16);
+}
+
+body {
+    line-height: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: rgb(51, 51, 51);
+}
+
 ul, nav {
     list-style: none;
-    padding: inherit;
-}
-
-.row {
-    border: 1px solid greenyellow;
-}
-
-.row > * {
-    border: 1px dotted red;
+    padding: 0;
+    padding-top: 0;
 }
 
 * {
@@ -16,23 +20,26 @@ ul, nav {
 }
 
 .img {
-    background-size: contain;
+    background-size: cover;
     width: 100%;
     height: 0;
     padding-top: calc(364 / 591 * 100%);
     background-repeat: no-repeat;
+    margin-bottom: 8px;
 }
 
 .img.med {
     height: 95px;
     width: 95px;
     padding-top: 0;
+    margin-right: 8px;
 }
 
 .img.small {
     height: 63px;
     width: 63px;
     padding-top: 0;
+    margin-right: 8px;
 }
 
 .newsletter.img {
@@ -47,4 +54,324 @@ ul, nav {
 
 .hor li {
     margin-right: 5px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+
+/* Stylings */
+h2 {
+    color: rgba(3, 3, 3, 0.4);
+    font-size: 16px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+}
+
+.title h2 {
+    padding-bottom: 11px;
+}
+
+h3 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.summary {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+h5 {
+    font-size: 16px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+}
+
+/* Gaps */
+.more-stories, .the-debate, .opinion, .editors-pick, .bottom, .newsletter, footer {
+    padding-top: 39px;
+}
+
+.the-debate, .debate-deco, .stack-right, .opinion, .editors-pick, .bottom, .newsletter, footer {
+    position: relative;
+}
+
+.opinion::before, .the-debate::before, .editors-pick::before, .bottom::before, .newsletter::before, footer::before {
+    background-color: rgb(244, 245, 247);
+    border-top: 1px solid rgb(226, 226, 226);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -15px;
+    right: -15px;
+    height: 18px;
+}
+
+
+/*      Header      */
+.main-header {
+    background:var(--reddy);
+    padding: 15px;
+}
+
+
+/*      Content     */
+.main {
+    padding: 20px 15px 0 15px;
+}
+
+/* top article */
+.stories {
+    padding-top: 39px;
+    padding-bottom: 10px;
+}
+
+.my-turn .img {
+    padding-top: 100%;
+}
+
+.title {
+    font-size: 16px;
+    color: rgba(3, 3, 3, 0.5);
+    font-weight: 700;
+    padding: 15px 0;
+}
+
+.more-stories .img {
+    float: left;
+}
+
+.more-stories article {
+    border-top: 1px solid rgb(221, 221, 221);
+    padding: 14px 0;
+}
+
+.more-stories h3 {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 600; /*self altered */
+}
+
+/* lg right col */
+.the-debate {
+    margin-bottom: 30px;
+}
+
+.stack-right h3, .stack-right p{
+    font-size: 17px;
+    font-weight: 700;
+    /* improve grouping here */
+}
+
+.the-debate span {
+    font-weight: 400;
+}
+
+.debate-1 {
+    padding: 10px 0 4px;
+    border-top: 4px solid rgb(217, 217, 217);
+}
+
+.debate-2 {
+    padding-bottom: 12px;
+    border-bottom: 4px solid rgb(217, 217, 217);
+}
+
+.debate-deco-vs {
+    position: relative;
+    border-radius: 50%;
+    color:rgb(214, 214, 214);
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    text-align: center;
+    margin: 6px auto;
+    background-color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 14px;
+    z-index: 1;
+}
+
+.debate-deco::after {
+    top: 50%;
+}
+
+.debate-deco::before, .debate-deco::after, {
+    position: absolute;
+    top: calc(50% - 2px);
+    right: 0px;
+    left: 0px;
+    background-color: #d9d9d9;
+    content: "";
+    height: 1px;
+}
+
+.opinion li:not(:first-child), .mini li:not(:first-child) {
+    border-top: 1px solid rgb(221, 221, 221);
+}
+
+.opinion li, .mini li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.opinion img, .mini img {
+    flex: 0 0 auto;
+    margin-right: 5px;
+}
+
+.opinion .info, .mini h4 {
+    flex: 1 1 0%;
+}
+
+.opinion p {
+    color: rgb(85, 85, 85);
+    font-size: 14px;
+}
+
+/* in the magazine */
+header.title {
+    font-size: 19px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.article-cover .img {
+    padding-top: calc(480 / 360 * 100%);
+} 
+
+.see-all-features {
+    width: 100%;
+    background: rgb(244, 245, 246);
+    padding: 10px 12px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    display: flex;
+}
+
+.article-cover a {
+    color: black;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.cat {
+    color: var(--reddy);
+}
+
+.mag {
+    background: var(--reddy);
+    padding: 4px 7px;
+    line-height: 26px;
+    color: white;
+}
+
+.in-the-magazine .img {
+    padding-top: calc(311 / 466 * 100%);
+    margin-bottom: 8px;
+}
+
+/* editors pick */
+.editors-pick header {
+    border-bottom: 1px solid rgb(217, 217, 217);
+    padding-bottom: 12px;
+}
+
+.editors-pick .img {
+    padding-top: calc(265 / 397 * 100%);
+}
+
+.block-title {
+    color: var(--reddy);
+    padding-top: 25px;
+    padding-bottom: 11px;
+    font-size: 22px;
+    margin: 0;
+    border-top: 1px solid rgb(217, 217, 217);
+}
+
+.sect h4 {
+    margin-top: 10px;
+    margin-bottom: 24px;
+}
+
+.mini .img{
+    float: left;
+}
+
+.mini > *{
+    clear: both;
+}
+
+.mini h4 {
+    align-self: flex-start;
+    margin: 0;
+}
+
+
+/*      Bottom      */
+/* subscribe */
+.subscribe .img {
+    padding-top: calc(227 / 170 * 100%);
+    height: auto;
+    width: 100%;
+}
+
+.starting-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid rgb(235, 235, 235);
+    text-align: center;
+}
+
+.newsletter h2 {
+    color: var(--reddy);
+    font-size: 18px;
+}
+
+#signup {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#signup p {
+    font-weight: 300;
+    font-size: 15px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.form-submit {
+    margin-top: 11px;
+    height: 38px;
+    border: none;
+    background: rgb(246, 22, 2);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form-email {
+    height: 38px;
+    padding: 5px;
 }
