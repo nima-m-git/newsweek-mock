@@ -124,8 +124,28 @@ h5 {
 .main-header {
     background:var(--reddy);
     padding: 15px;
+    display: flex;
+    justify-content: space-between;
 }
 
+.logo {
+    background-image: url('https://seeklogo.com/images/N/newsweek-logo-40091943EA-seeklogo.com.png');
+    width: 132px;
+    height: 30px;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.subscribe {
+    display: flex;
+    background: rgb(255, 228, 0);
+    padding: 0 12px;
+    border-radius: 24px;
+    line-height: 24px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 
 /*      Content     */
 .main {
