@@ -1,5 +1,14 @@
-body > * {
-    border: 1px dotted greenyellow;
+ul, nav {
+    list-style: none;
+    padding: inherit;
+}
+
+.row {
+    border: 1px solid greenyellow;
+}
+
+.row > * {
+    border: 1px dotted red;
 }
 
 * {
@@ -17,9 +26,25 @@ body > * {
 .img.med {
     height: 95px;
     width: 95px;
+    padding-top: 0;
 }
 
 .img.small {
     height: 63px;
     width: 63px;
+    padding-top: 0;
+}
+
+.newsletter.img {
+    padding-top: 0;
+    height: 191px;
+}
+
+.hor {
+    display: flex;
+    flex-direction: row;
+}
+
+.hor li {
+    margin-right: 5px;
 }
