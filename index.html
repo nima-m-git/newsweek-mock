@@ -8,8 +8,8 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel='stylesheet' href='styles.css'>
-        <title>Hello, world!</title>
-        </head>
+        <title>Newsweek Mock</title>
+    </head>
     <body>
         <header>
             <div class="main-header navbar">
@@ -21,36 +21,38 @@
                     <div class='hamburger'><span class="genericon genericon-menu"></span></div>
                 </div>
             </div>
-            <nav class="d-none d-lg-flex navbar">
-                <ul class="hor">
-                    <li>U.S</li>
-                    <li>World</li>
-                    <li>Business</li>
-                    <li>Tech & Science</li>
-                    <li>Culture</li>
-                    <li>Newsgeek</li>
-                    <li>Sports</li>
-                    <li>Health</li>
-                    <li>The Debate</li>
-                    <li>Vantage</li>
-                    <li>Weather</li>
-                    <li id='search-btn'>Search</li>
-                </ul>
-            </nav>
-            <nav class="d-none d-lg-flex navbar">
-                <ul class="hor">
-                    <li>Trending</li>
-                    <li>Donald Trump</li>
-                    <li>Joe Biden</li>
-                    <li>China</li>
-                    <li>Coronavirus</li>
-                    <li>2020 Election</li>
-                </ul>
-            </nav>
+            <div class="bottom-header">
+                <nav class="page-nav">
+                    <ul class="navbar hor d-none d-lg-flex">
+                        <li>U.S</li>
+                        <li>World</li>
+                        <li>Business</li>
+                        <li>Tech & Science</li>
+                        <li>Culture</li>
+                        <li>Newsgeek</li>
+                        <li>Sports</li>
+                        <li>Health</li>
+                        <li>The Debate</li>
+                        <li>Vantage</li>
+                        <li>Weather</li>
+                        <li id='search-btn'>Search</li>
+                    </ul>
+                </nav>
+                <nav class="topics">
+                    <ul class="hor d-none d-lg-flex">
+                        <li>Trending</li>
+                        <li>Donald Trump</li>
+                        <li>Joe Biden</li>
+                        <li>China</li>
+                        <li>Coronavirus</li>
+                        <li>2020 Election</li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <div class="main container-fluid">
-            <div class="row top-article d-flex">
-                <section class='featured-stories col-md-5 col-lg-4 order-2'>
+            <div class="row top-article">
+                <section class='featured-stories gap col-md-5 col-lg-4 order-2 order-md-1'>
                     <h2>Featured Stories</h2>
                     <article>
                         <div class='img' style='background-image: url("https://d.newsweek.com/en/full/1619674/kanye-west-innovator-awards.webp?w=466&h=311&q=90&f=3701deea7eddd1f9aa9e241d91cad296");'></div>
@@ -78,8 +80,8 @@
                         <p class='summary'>"Hang the nooses," angry Lebanese wrote on social media and protest signs.</p>
                     </article>
                 </section>
-                <div class="col-md-7 col-lg-5 order-1">
-                    <section class='top-story'>
+                <div class="col2 row col-md-7 col-lg-5 order-1 order-md-2">
+                    <div class="top-story">
                         <h2>Top Story</h2>
                         <article>
                             <div class='img' style="background-image: url('https://d.newsweek.com/en/full/1619641/donald-trump.webp?w=591&h=364&f=9410914901da4adbd5df4d43aae26983');">
@@ -87,9 +89,9 @@
                             <h3>Trump Promises to Extend Unemployment Benifits, Eviction Freeze</h3>
                             <p>President Donald Trump has again threatened to sidestep Congress as the White House and Democratic lawmakers failed to reach an agreement on the next coronavirus relief package, but he hasn't yet issued a threatened executive order to act on his own.</p>
                         </article>
-                    </section>
+                    </div>
                     <div class="stories">
-                        <section class='my-turn'>
+                        <section class='my-turn gap'>
                             <h2>My Turn</h2>
                             <div class="row">
                                 <div class="col-md-4">
@@ -123,7 +125,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section class='more-stories'>
+                        <section class='more-stories gap'>
                             <h2 class="title">More Stories</h2>
                             <article class='clearfix'>
                                 <div class='img med' style="background-image: url(https://d.newsweek.com/en/full/1619684/baby-formula-bottle.webp?w=95&h=95&f=ae083f676ebdbcb1f099f679d7ee3d56);"></div>
@@ -188,8 +190,9 @@
                         </section>
                     </div>
                 </div>
-                <div class='stack-right col-lg-3 order-3'>
-                    <section class='the-debate'>
+
+                <div class='stack-right col-lg-3 order-3 order-md-4'>
+                    <section class='the-debate gap'>
                         <h2>The Debate</h2>
                         <div class="debate-1">
                             <div class='debate clearfix'>
@@ -209,7 +212,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class='opinion'>
+                    <section class='opinion gap'>
                         <h2>Opinion</h2>
                         <ul>
                             <li>
@@ -263,7 +266,7 @@
                     </div>
                 </footer>
             </div>
-            <section class='in-the-magazine'>
+            <section class='in-the-magazine gap'>
                 <header class='title'>
                     <p>In The Magazine</p>
                 </header>
@@ -305,7 +308,7 @@
                     </div>
                 </div>
             </section>
-            <div class='editors-pick'>
+            <div class='editors-pick gap'>
                 <header class='title'>
                     N Editor's Pick
                 </header>
@@ -526,12 +529,12 @@
                 </div>
             </section>
 
-            <div class="bottom row">
+            <div class="bottom gap row">
                 <div class='subscribe row col-12 col-lg-8'>
                     <h2 class='block-title'>Subscribe</h2>
                     <div class="img" style="background-image: url(https://d.newsweek.com/en/full/1618294/cover-august-14-2020.jpg?w=170&q=95&f=f52aeae07248b670928a3f583a3ebda9);"></div>
                 </div>
-                <div class='newsletter col-lg-4'>
+                <div class='newsletter gap col-lg-4'>
                     <h2 class="">Newsletter</h2>
                     <div class='starting-5'>
                         <div class='newsletter img d-none d-md-block' style="background-image: url(https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5);"></div>
@@ -544,7 +547,7 @@
                     </div>
                 </div>
             </div>
-            <footer>
+            <footer class='gap'>
                 <h1>Newsweek</h1>
                 <p>C 2020 NEWSWEEK</p>
                 <ul class='social-icons hor'>
