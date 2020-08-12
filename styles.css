@@ -145,7 +145,7 @@ h5 {
     background-size: cover;
 }
 
-.subscribe {
+.subscribe-btn {
     display: flex;
     background: rgb(255, 228, 0);
     padding: 0 12px;
@@ -397,9 +397,18 @@ header.title {
 /*      Bottom      */
 /* subscribe */
 .subscribe .img {
-    padding-top: calc(227 / 170 * 100%);
-    height: auto;
-    width: 100%;
+    padding-top: 0;
+    height: 228px;
+    width: 170px;
+}
+
+.subscribe-container {
+    display: flex;
+    background: rgb(244, 245, 246);;
+}
+
+.img-layers {
+    height: 160px;
 }
 
 .starting-5 {
